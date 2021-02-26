@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.arvore {
+    position: relative;
+    margin-top: 20px;
+    }
+
+    .arvore .layer {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: green;
+        clip-path: polygon(50% 5%, 100% 85%, 100% 100%, 0 100%, 0 85%);
+        }
+
+
+        .arvore .arroz {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: black;
+            clip-path: polygon(50% 0%, 0% 110%, 95% 100%);
+            margin-top: 20px;
+            margin-left: 10px;
+            }
+
+            .arvore div:nth-child(1) {
+                transform: translateY(5px);
+                z-index: 3;
+                }
+                .arvore div:nth-child(2) {
+                transform: translateY(0);
+                z-index: 3;
+                }
+                .arvore div:nth-child(3) {
+                transform: translateY(40px);
+                z-index: 2;
+                }
+                .arvore div:nth-child(4) {
+                transform: translateY(35px);
+                z-index: 2;
+                }
+                .arvore div:nth-child(5) {
+                transform: translateY(70px);
+                z-index: 1;
+                }
+
+                .arvore:before {
+                    position: absolute;
+                    left: 42px;
+                    z-index: 10;
+                    top: -9px;
+                    }
+
+                .tronco{
+                    position: absolute;
+                    background-color: saddlebrown;
+                    width: 20px;
+                    height: 50px;
+                    left: 40px;
+                    top: 140px;
+                }
